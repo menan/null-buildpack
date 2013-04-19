@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-echo "--- {}"
-
 config_vars:
   PATH: "vendor/taglib-1.8/bin:/usr/local/bin:/bin"
