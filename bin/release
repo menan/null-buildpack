@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-
+cat <<EOF
+---
 config_vars:
-  PATH: "vendor/taglib-1.8/bin:/usr/local/bin:/bin"
+  PATH: vendor/taglib-1.8/bin:/usr/local/bin:/usr/bin:/bin
+EOF
