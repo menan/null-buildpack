@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "-----> Nothing to do."
+AWESOME_VM_BINARY="https://awesome-vm.s3.amazonaws.com/taglib/taglib-1.8.tgz"
+AWESOME_VM_VENDOR="vendor/taglib-1.8"
+
+# vendor taglib
+mkdir -p $1/$AWESOME_VM_VENDOR
+curl $AWESOME_VM_BINARY -o - | tar -xz -C $1/$AWESOME_VM_VENDOR -f -
