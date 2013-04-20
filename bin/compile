@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-AWESOME_VM_BINARY="https://s3.amazonaws.com/menan/taglib/taglib-1.8.gz"
+AWESOME_VM_BINARY="https://s3.amazonaws.com/menan/heroku-buildpack-ruby/taglib.tgz"
 AWESOME_VM_VENDOR="vendor/taglib-1.8"
 
 # vendor taglib
