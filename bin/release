@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-cat <<EOF
+cat << EOF
 ---
+addons:
+  - shared-database:5mb
 config_vars:
-  PATH: vendor/taglib-1.8/bin:/usr/local/bin:/usr/bin:/bin
+  PATH: /app/.local/bin:/usr/bin:/bin
+  LD_LIBRARY_PATH: /app/.local/lib
+default_process_types:
+  web: io
 EOF
